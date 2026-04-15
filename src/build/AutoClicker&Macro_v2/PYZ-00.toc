@@ -1,0 +1,2615 @@
+('C:\\! '
+ 'BASTA\\philhealth\\AutoClicker\\src\\build\\AutoClicker&Macro_v2\\PYZ-00.pyz',
+ [('PIL',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\__init__.py',
+   'PYMODULE'),
+  ('PIL.AvifImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\AvifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BmpImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ExifTags',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ExifTags.py',
+   'PYMODULE'),
+  ('PIL.FitsImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GifImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GimpGradientFile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'PYMODULE'),
+  ('PIL.GimpPaletteFile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Image',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.ImageChops',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageChops.py',
+   'PYMODULE'),
+  ('PIL.ImageCms',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageCms.py',
+   'PYMODULE'),
+  ('PIL.ImageColor',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageColor.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.ImageFilter',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageFilter.py',
+   'PYMODULE'),
+  ('PIL.ImageMath',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageMath.py',
+   'PYMODULE'),
+  ('PIL.ImageMode',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageMode.py',
+   'PYMODULE'),
+  ('PIL.ImageOps',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageOps.py',
+   'PYMODULE'),
+  ('PIL.ImagePalette',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImagePalette.py',
+   'PYMODULE'),
+  ('PIL.ImageQt',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageQt.py',
+   'PYMODULE'),
+  ('PIL.ImageSequence',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageSequence.py',
+   'PYMODULE'),
+  ('PIL.ImageShow',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageShow.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.ImageWin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImageWin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegPresets',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\JpegPresets.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PaletteFile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PaletteFile.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfParser',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PdfParser.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PngImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PpmImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.QoiImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\QoiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL._binary',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\_binary.py',
+   'PYMODULE'),
+  ('PIL._deprecate',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\_deprecate.py',
+   'PYMODULE'),
+  ('PIL._typing',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\_typing.py',
+   'PYMODULE'),
+  ('PIL._util',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\_util.py',
+   'PYMODULE'),
+  ('PIL._version',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\_version.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\PIL\\features.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\__future__.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('_pydatetime',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_pydatetime.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_strptime.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\_threading_local.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\argparse.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\ast.py',
+   'PYMODULE'),
+  ('asyncio',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.mixins',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\mixins.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.taskgroups',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\taskgroups.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('asyncio.threads',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\threads.py',
+   'PYMODULE'),
+  ('asyncio.timeouts',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\timeouts.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\base64.py',
+   'PYMODULE'),
+  ('bcrypt',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\bcrypt\\__init__.py',
+   'PYMODULE'),
+  ('bdb',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\bdb.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\bisect.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\bz2.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\calendar.py',
+   'PYMODULE'),
+  ('certifi',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\certifi\\__init__.py',
+   'PYMODULE'),
+  ('certifi.core',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\certifi\\core.py',
+   'PYMODULE'),
+  ('charset_normalizer',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\__init__.py',
+   'PYMODULE'),
+  ('charset_normalizer.api',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\api.py',
+   'PYMODULE'),
+  ('charset_normalizer.cd',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\cd.py',
+   'PYMODULE'),
+  ('charset_normalizer.constant',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\constant.py',
+   'PYMODULE'),
+  ('charset_normalizer.legacy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\legacy.py',
+   'PYMODULE'),
+  ('charset_normalizer.models',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\models.py',
+   'PYMODULE'),
+  ('charset_normalizer.utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\utils.py',
+   'PYMODULE'),
+  ('charset_normalizer.version',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\charset_normalizer\\version.py',
+   'PYMODULE'),
+  ('cmd',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\cmd.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\code.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\codeop.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\colorsys.py',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\contextlib.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\contextvars.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\copy.py',
+   'PYMODULE'),
+  ('core_engine',
+   'C:\\! BASTA\\philhealth\\AutoClicker\\src\\core_engine.py',
+   'PYMODULE'),
+  ('cryptography',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.__about__',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\__about__.py',
+   'PYMODULE'),
+  ('cryptography.exceptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\exceptions.py',
+   'PYMODULE'),
+  ('cryptography.hazmat',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat._oid',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\_oid.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\backends\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.backend',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\backend.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl._conditional',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\_conditional.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl.binding',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\binding.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit.ciphers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit.ciphers.algorithms',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\algorithms.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._asymmetric',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\_asymmetric.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._cipheralgorithm',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\_cipheralgorithm.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._serialization',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\_serialization.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.dh',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\dh.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.dsa',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\dsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ec',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ec.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ed25519',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ed25519.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ed448',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ed448.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.padding',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\padding.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.rsa',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\rsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.types',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\types.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\utils.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.x25519',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\x25519.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.x448',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\x448.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.algorithms',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\algorithms.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.base',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\base.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.modes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\modes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.constant_time',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\constant_time.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.hashes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\hashes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization.base',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\base.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization.ssh',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\ssh.py',
+   'PYMODULE'),
+  ('cryptography.utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\utils.py',
+   'PYMODULE'),
+  ('cryptography.x509',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.x509.base',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\base.py',
+   'PYMODULE'),
+  ('cryptography.x509.certificate_transparency',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\certificate_transparency.py',
+   'PYMODULE'),
+  ('cryptography.x509.extensions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\extensions.py',
+   'PYMODULE'),
+  ('cryptography.x509.general_name',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\general_name.py',
+   'PYMODULE'),
+  ('cryptography.x509.name',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\name.py',
+   'PYMODULE'),
+  ('cryptography.x509.oid',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\oid.py',
+   'PYMODULE'),
+  ('cryptography.x509.verification',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\cryptography\\x509\\verification.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\csv.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._aix',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\_aix.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('ctypes.macholib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('ctypes.util',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('customtkinter',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_input_dialog',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\ctk_input_dialog.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_tk',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\ctk_tk.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_toplevel',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\ctk_toplevel.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode.appearance_mode_base_class',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\appearance_mode_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode.appearance_mode_tracker',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\appearance_mode_tracker.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering.ctk_canvas',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\ctk_canvas.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering.draw_engine',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\draw_engine.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes.ctk_base_class',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\ctk_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes.dropdown_menu',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\dropdown_menu.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_button',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_button.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_checkbox',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_checkbox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_combobox',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_combobox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_entry',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_entry.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_frame',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_frame.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_label',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_label.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_optionmenu',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_optionmenu.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_progressbar',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_progressbar.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_radiobutton',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_radiobutton.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_scrollable_frame',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_scrollable_frame.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_scrollbar',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_scrollbar.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_segmented_button',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_segmented_button.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_slider',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_slider.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_switch',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_switch.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_tabview',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_tabview.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_textbox',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_textbox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font.ctk_font',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\ctk_font.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font.font_manager',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\font_manager.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.image',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\image\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.image.ctk_image',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\image\\ctk_image.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling.scaling_base_class',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\scaling_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling.scaling_tracker',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\scaling_tracker.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.theme',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\theme\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.theme.theme_manager',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\theme\\theme_manager.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.utility',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\utility\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.utility.utility_functions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\customtkinter\\windows\\widgets\\utility\\utility_functions.py',
+   'PYMODULE'),
+  ('darkdetect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\darkdetect\\__init__.py',
+   'PYMODULE'),
+  ('darkdetect._dummy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\darkdetect\\_dummy.py',
+   'PYMODULE'),
+  ('darkdetect._linux_detect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\darkdetect\\_linux_detect.py',
+   'PYMODULE'),
+  ('darkdetect._mac_detect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\darkdetect\\_mac_detect.py',
+   'PYMODULE'),
+  ('darkdetect._windows_detect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\darkdetect\\_windows_detect.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\dataclasses.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\datetime.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\decimal.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\difflib.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\dis.py',
+   'PYMODULE'),
+  ('doctest',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\doctest.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('fileinput',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\fileinput.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\fnmatch.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\fractions.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ftplib.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\getopt.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\getpass.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\gettext.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\glob.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\gzip.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\hashlib.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\hmac.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\html\\entities.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\http\\client.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http.cookies',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\http\\cookies.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\http\\server.py',
+   'PYMODULE'),
+  ('idna',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\idna\\uts46data.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\resources\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\resources\\_common.py',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\resources\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.resources._legacy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\resources\\_legacy.py',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\resources\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\resources\\readers.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\inspect.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\ipaddress.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('keyboard',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\__init__.py',
+   'PYMODULE'),
+  ('keyboard._canonical_names',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\_canonical_names.py',
+   'PYMODULE'),
+  ('keyboard._darwinkeyboard',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\_darwinkeyboard.py',
+   'PYMODULE'),
+  ('keyboard._generic',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\_generic.py',
+   'PYMODULE'),
+  ('keyboard._keyboard_event',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\_keyboard_event.py',
+   'PYMODULE'),
+  ('keyboard._nixcommon',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\_nixcommon.py',
+   'PYMODULE'),
+  ('keyboard._nixkeyboard',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\_nixkeyboard.py',
+   'PYMODULE'),
+  ('keyboard._winkeyboard',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\keyboard\\_winkeyboard.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\lzma.py',
+   'PYMODULE'),
+  ('macro_engine',
+   'C:\\! BASTA\\philhealth\\AutoClicker\\src\\macro_engine.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\mimetypes.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\netrc.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\nturl2path.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\numbers.py',
+   'PYMODULE'),
+  ('numpy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('numpy.__config__',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\__config__.py',
+   'PYMODULE'),
+  ('numpy._array_api_info',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_array_api_info.py',
+   'PYMODULE'),
+  ('numpy._core',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\__init__.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_add_newdocs.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs_scalars',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_add_newdocs_scalars.py',
+   'PYMODULE'),
+  ('numpy._core._asarray',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_asarray.py',
+   'PYMODULE'),
+  ('numpy._core._dtype',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_dtype.py',
+   'PYMODULE'),
+  ('numpy._core._dtype_ctypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_dtype_ctypes.py',
+   'PYMODULE'),
+  ('numpy._core._exceptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_exceptions.py',
+   'PYMODULE'),
+  ('numpy._core._internal',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_internal.py',
+   'PYMODULE'),
+  ('numpy._core._machar',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_machar.py',
+   'PYMODULE'),
+  ('numpy._core._methods',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_methods.py',
+   'PYMODULE'),
+  ('numpy._core._string_helpers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_string_helpers.py',
+   'PYMODULE'),
+  ('numpy._core._type_aliases',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_type_aliases.py',
+   'PYMODULE'),
+  ('numpy._core._ufunc_config',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py',
+   'PYMODULE'),
+  ('numpy._core.arrayprint',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\arrayprint.py',
+   'PYMODULE'),
+  ('numpy._core.defchararray',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\defchararray.py',
+   'PYMODULE'),
+  ('numpy._core.einsumfunc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\einsumfunc.py',
+   'PYMODULE'),
+  ('numpy._core.fromnumeric',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py',
+   'PYMODULE'),
+  ('numpy._core.function_base',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\function_base.py',
+   'PYMODULE'),
+  ('numpy._core.getlimits',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\getlimits.py',
+   'PYMODULE'),
+  ('numpy._core.memmap',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\memmap.py',
+   'PYMODULE'),
+  ('numpy._core.multiarray',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\multiarray.py',
+   'PYMODULE'),
+  ('numpy._core.numeric',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\numeric.py',
+   'PYMODULE'),
+  ('numpy._core.numerictypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\numerictypes.py',
+   'PYMODULE'),
+  ('numpy._core.overrides',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\overrides.py',
+   'PYMODULE'),
+  ('numpy._core.printoptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\printoptions.py',
+   'PYMODULE'),
+  ('numpy._core.records',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\records.py',
+   'PYMODULE'),
+  ('numpy._core.shape_base',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\shape_base.py',
+   'PYMODULE'),
+  ('numpy._core.strings',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\strings.py',
+   'PYMODULE'),
+  ('numpy._core.tests', '-', 'PYMODULE'),
+  ('numpy._core.tests._natype',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\tests\\_natype.py',
+   'PYMODULE'),
+  ('numpy._core.umath',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_core\\umath.py',
+   'PYMODULE'),
+  ('numpy._distributor_init',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_distributor_init.py',
+   'PYMODULE'),
+  ('numpy._expired_attrs_2_0',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_expired_attrs_2_0.py',
+   'PYMODULE'),
+  ('numpy._globals',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_globals.py',
+   'PYMODULE'),
+  ('numpy._pytesttester',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_pytesttester.py',
+   'PYMODULE'),
+  ('numpy._typing',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy._typing._add_docstring',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_add_docstring.py',
+   'PYMODULE'),
+  ('numpy._typing._array_like',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_array_like.py',
+   'PYMODULE'),
+  ('numpy._typing._char_codes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_char_codes.py',
+   'PYMODULE'),
+  ('numpy._typing._dtype_like',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_dtype_like.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_nbit.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit_base',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_nbit_base.py',
+   'PYMODULE'),
+  ('numpy._typing._nested_sequence',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_nested_sequence.py',
+   'PYMODULE'),
+  ('numpy._typing._scalars',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_scalars.py',
+   'PYMODULE'),
+  ('numpy._typing._shape',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_shape.py',
+   'PYMODULE'),
+  ('numpy._typing._ufunc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_typing\\_ufunc.py',
+   'PYMODULE'),
+  ('numpy._utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_utils\\__init__.py',
+   'PYMODULE'),
+  ('numpy._utils._convertions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_utils\\_convertions.py',
+   'PYMODULE'),
+  ('numpy._utils._inspect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\_utils\\_inspect.py',
+   'PYMODULE'),
+  ('numpy.char',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\char\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\core\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core._utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\core\\_utils.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\ctypeslib.py',
+   'PYMODULE'),
+  ('numpy.dtypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\dtypes.py',
+   'PYMODULE'),
+  ('numpy.exceptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\exceptions.py',
+   'PYMODULE'),
+  ('numpy.f2py',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py.__version__',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\__version__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._backend',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\_backends\\_backend.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._distutils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\_backends\\_distutils.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._meson',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\_backends\\_meson.py',
+   'PYMODULE'),
+  ('numpy.f2py._isocbind',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\_isocbind.py',
+   'PYMODULE'),
+  ('numpy.f2py.auxfuncs',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\auxfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.capi_maps',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\capi_maps.py',
+   'PYMODULE'),
+  ('numpy.f2py.cb_rules',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\cb_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.cfuncs',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\cfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.common_rules',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\common_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.crackfortran',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\crackfortran.py',
+   'PYMODULE'),
+  ('numpy.f2py.diagnose',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\diagnose.py',
+   'PYMODULE'),
+  ('numpy.f2py.f2py2e',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\f2py2e.py',
+   'PYMODULE'),
+  ('numpy.f2py.f90mod_rules',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\f90mod_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.func2subr',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\func2subr.py',
+   'PYMODULE'),
+  ('numpy.f2py.rules',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.symbolic',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\symbolic.py',
+   'PYMODULE'),
+  ('numpy.f2py.use_rules',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\f2py\\use_rules.py',
+   'PYMODULE'),
+  ('numpy.fft',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\fft\\__init__.py',
+   'PYMODULE'),
+  ('numpy.fft._helper',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\fft\\_helper.py',
+   'PYMODULE'),
+  ('numpy.fft._pocketfft',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\fft\\_pocketfft.py',
+   'PYMODULE'),
+  ('numpy.fft.helper',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\fft\\helper.py',
+   'PYMODULE'),
+  ('numpy.lib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.lib._array_utils_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_array_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraypad_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_arraypad_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraysetops_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_arraysetops_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arrayterator_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_arrayterator_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._datasource',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_datasource.py',
+   'PYMODULE'),
+  ('numpy.lib._function_base_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_function_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._histograms_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_histograms_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._index_tricks_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_index_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._iotools',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_iotools.py',
+   'PYMODULE'),
+  ('numpy.lib._nanfunctions_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_nanfunctions_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._npyio_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_npyio_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._polynomial_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_polynomial_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._scimath_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_scimath_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._shape_base_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_shape_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._stride_tricks_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_stride_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._twodim_base_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_twodim_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._type_check_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_type_check_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._ufunclike_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_ufunclike_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._utils_impl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._version',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\_version.py',
+   'PYMODULE'),
+  ('numpy.lib.array_utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\array_utils.py',
+   'PYMODULE'),
+  ('numpy.lib.format',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\format.py',
+   'PYMODULE'),
+  ('numpy.lib.introspect',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\introspect.py',
+   'PYMODULE'),
+  ('numpy.lib.mixins',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\mixins.py',
+   'PYMODULE'),
+  ('numpy.lib.npyio',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\npyio.py',
+   'PYMODULE'),
+  ('numpy.lib.recfunctions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\recfunctions.py',
+   'PYMODULE'),
+  ('numpy.lib.scimath',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\scimath.py',
+   'PYMODULE'),
+  ('numpy.lib.stride_tricks',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\lib\\stride_tricks.py',
+   'PYMODULE'),
+  ('numpy.linalg',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg._linalg',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\linalg\\_linalg.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.ma',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\ma\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ma.core',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\ma\\core.py',
+   'PYMODULE'),
+  ('numpy.ma.extras',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\ma\\extras.py',
+   'PYMODULE'),
+  ('numpy.ma.mrecords',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\ma\\mrecords.py',
+   'PYMODULE'),
+  ('numpy.matlib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\matlib.py',
+   'PYMODULE'),
+  ('numpy.matrixlib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\matrixlib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib.defmatrix',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\matrixlib\\defmatrix.py',
+   'PYMODULE'),
+  ('numpy.polynomial',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\__init__.py',
+   'PYMODULE'),
+  ('numpy.polynomial._polybase',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\_polybase.py',
+   'PYMODULE'),
+  ('numpy.polynomial.chebyshev',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\chebyshev.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\hermite.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite_e',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\hermite_e.py',
+   'PYMODULE'),
+  ('numpy.polynomial.laguerre',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\laguerre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.legendre',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\legendre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polynomial',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polyutils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\polynomial\\polyutils.py',
+   'PYMODULE'),
+  ('numpy.random',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\random\\__init__.py',
+   'PYMODULE'),
+  ('numpy.random._pickle',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\random\\_pickle.py',
+   'PYMODULE'),
+  ('numpy.rec',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\rec\\__init__.py',
+   'PYMODULE'),
+  ('numpy.strings',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\strings\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\testing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\testing\\_private\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.extbuild',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\testing\\_private\\extbuild.py',
+   'PYMODULE'),
+  ('numpy.testing._private.utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\testing\\_private\\utils.py',
+   'PYMODULE'),
+  ('numpy.testing.overrides',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\testing\\overrides.py',
+   'PYMODULE'),
+  ('numpy.typing',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.version',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\numpy\\version.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\opcode.py',
+   'PYMODULE'),
+  ('packaging',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('packaging._structures',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('packaging.version',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\packaging\\version.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\pathlib.py',
+   'PYMODULE'),
+  ('pdb',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\pdb.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\pickle.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\pkgutil.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\platform.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\pprint.py',
+   'PYMODULE'),
+  ('psutil',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\psutil\\__init__.py',
+   'PYMODULE'),
+  ('psutil._common',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\psutil\\_common.py',
+   'PYMODULE'),
+  ('psutil._pswindows',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\psutil\\_pswindows.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\py_compile.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\pydoc.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pywin32_system32', '-', 'PYMODULE'),
+  ('pywintypes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\win32\\lib\\pywintypes.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\queue.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\quopri.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\random.py',
+   'PYMODULE'),
+  ('requests',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\__init__.py',
+   'PYMODULE'),
+  ('requests.__version__',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\__version__.py',
+   'PYMODULE'),
+  ('requests._internal_utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\_internal_utils.py',
+   'PYMODULE'),
+  ('requests.adapters',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\adapters.py',
+   'PYMODULE'),
+  ('requests.api',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\api.py',
+   'PYMODULE'),
+  ('requests.auth',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\auth.py',
+   'PYMODULE'),
+  ('requests.certs',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\certs.py',
+   'PYMODULE'),
+  ('requests.compat',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\compat.py',
+   'PYMODULE'),
+  ('requests.cookies',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\cookies.py',
+   'PYMODULE'),
+  ('requests.exceptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\exceptions.py',
+   'PYMODULE'),
+  ('requests.hooks',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\hooks.py',
+   'PYMODULE'),
+  ('requests.models',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\models.py',
+   'PYMODULE'),
+  ('requests.packages',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\packages.py',
+   'PYMODULE'),
+  ('requests.sessions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\sessions.py',
+   'PYMODULE'),
+  ('requests.status_codes',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\status_codes.py',
+   'PYMODULE'),
+  ('requests.structures',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\structures.py',
+   'PYMODULE'),
+  ('requests.utils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\requests\\utils.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\runpy.py',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\secrets.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\selectors.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\shlex.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\shutil.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\signal.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\socket.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\socketserver.py',
+   'PYMODULE'),
+  ('socks',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\socks.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\ssl.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\statistics.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\string.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\subprocess.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\sysconfig.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tarfile.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tempfile.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\textwrap.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\threading.py',
+   'PYMODULE'),
+  ('tkinter',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\__init__.py',
+   'PYMODULE'),
+  ('tkinter.commondialog',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\commondialog.py',
+   'PYMODULE'),
+  ('tkinter.constants',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\constants.py',
+   'PYMODULE'),
+  ('tkinter.dialog',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\dialog.py',
+   'PYMODULE'),
+  ('tkinter.filedialog',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\filedialog.py',
+   'PYMODULE'),
+  ('tkinter.font',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\font.py',
+   'PYMODULE'),
+  ('tkinter.messagebox',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\messagebox.py',
+   'PYMODULE'),
+  ('tkinter.simpledialog',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\simpledialog.py',
+   'PYMODULE'),
+  ('tkinter.ttk',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tkinter\\ttk.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tokenize.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\andador kim phillip\\scoop\\apps\\python\\current\\Lib\\tty.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\typing.py',
+   'PYMODULE'),
+  ('typing_extensions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('unittest._log',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\_log.py',
+   'PYMODULE'),
+  ('unittest.async_case',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\async_case.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib3',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\__init__.py',
+   'PYMODULE'),
+  ('urllib3._base_connection',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\_base_connection.py',
+   'PYMODULE'),
+  ('urllib3._collections',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\_collections.py',
+   'PYMODULE'),
+  ('urllib3._request_methods',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\_request_methods.py',
+   'PYMODULE'),
+  ('urllib3._version',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\_version.py',
+   'PYMODULE'),
+  ('urllib3.connection',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\connection.py',
+   'PYMODULE'),
+  ('urllib3.connectionpool',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\connectionpool.py',
+   'PYMODULE'),
+  ('urllib3.contrib',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.connection',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.fetch',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\fetch.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.request',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\request.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.response',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py',
+   'PYMODULE'),
+  ('urllib3.contrib.pyopenssl',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'PYMODULE'),
+  ('urllib3.contrib.socks',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\contrib\\socks.py',
+   'PYMODULE'),
+  ('urllib3.exceptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\exceptions.py',
+   'PYMODULE'),
+  ('urllib3.fields',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\fields.py',
+   'PYMODULE'),
+  ('urllib3.filepost',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\filepost.py',
+   'PYMODULE'),
+  ('urllib3.http2',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\http2\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.http2.connection',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\http2\\connection.py',
+   'PYMODULE'),
+  ('urllib3.http2.probe',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\http2\\probe.py',
+   'PYMODULE'),
+  ('urllib3.poolmanager',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\poolmanager.py',
+   'PYMODULE'),
+  ('urllib3.response',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\response.py',
+   'PYMODULE'),
+  ('urllib3.util',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.util.connection',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\connection.py',
+   'PYMODULE'),
+  ('urllib3.util.proxy',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\proxy.py',
+   'PYMODULE'),
+  ('urllib3.util.request',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\request.py',
+   'PYMODULE'),
+  ('urllib3.util.response',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\response.py',
+   'PYMODULE'),
+  ('urllib3.util.retry',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\retry.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\ssl_.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_match_hostname',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
+   'PYMODULE'),
+  ('urllib3.util.ssltransport',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\ssltransport.py',
+   'PYMODULE'),
+  ('urllib3.util.timeout',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\timeout.py',
+   'PYMODULE'),
+  ('urllib3.util.url',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\url.py',
+   'PYMODULE'),
+  ('urllib3.util.util',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\util.py',
+   'PYMODULE'),
+  ('urllib3.util.wait',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\urllib3\\util\\wait.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\webbrowser.py',
+   'PYMODULE'),
+  ('win32con',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\site-packages\\win32\\lib\\win32con.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\zipfile\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\zipfile\\_path\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path.glob',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\zipfile\\_path\\glob.py',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Users\\andador kim '
+   'phillip\\scoop\\apps\\python\\current\\Lib\\zipimport.py',
+   'PYMODULE')])
