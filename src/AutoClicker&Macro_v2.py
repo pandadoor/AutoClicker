@@ -292,20 +292,55 @@ def update_cps():
         root.title(title)
 
 # ============================================================
-# MACRO RECORDING (merged record + save into one thread)
+# MACRO RECORDING — structured events, thread-safe GUI updates
 # ============================================================
-events = []
+_recorded_events = []
 
-def on_mouse_event(event):
-    events.append(event)
+def _on_mouse_event(event):
+    """Store mouse event as structured tuple for reliable parsing."""
+    t = time.perf_counter()
+    s = str(event)
+    if s.startswith('MoveEvent'):
+        try:
+            parts = s[:-1].strip().split()
+            x = parts[0].replace('MoveEvent(', '').replace('x=', '').rstrip(',')
+            y = parts[1].replace('y=', '').rstrip(',')
+            _recorded_events.append(('move', int(x), int(y), t))
+        except (ValueError, IndexError):
+            pass
+    elif s.startswith('ButtonEvent'):
+        try:
+            parts = s[:-1].strip().split()
+            evt_type = parts[0].split('=')[1].rstrip(',')
+            if 'double' in evt_type:
+                evt_type = 'down'
+            btn = parts[1].replace('button=', '').replace("'", '').rstrip(',').rstrip(')')
+            _recorded_events.append(('button', evt_type, btn, t))
+        except (ValueError, IndexError):
+            pass
+    elif s.startswith('WheelEvent'):
+        try:
+            parts = s[:-1].strip().split()
+            delta = parts[0].split('=')[1].rstrip(',')
+            _recorded_events.append(('wheel', int(float(delta)), t))
+        except (ValueError, IndexError):
+            pass
 
-def on_keyboard_event(event):
-    events.append((event, time.time()))
+def _on_keyboard_event(event):
+    """Store keyboard event as structured tuple."""
+    t = time.perf_counter()
+    try:
+        name = event.name
+        etype = event.event_type
+        if name and 'unknown' not in name.lower():
+            _recorded_events.append(('key', name, etype, t))
+    except AttributeError:
+        pass
 
 def checkMacro(e):
+    global _recorded_events, recording
     if 'down' not in e:
         return
-    global recording
     if clicking or playing or saving or recording:
         return
     doKeyboard = keyboardMacro_switch.get()
@@ -320,13 +355,11 @@ def checkMacro(e):
     MacroStop.configure(state='enabled')
     macroContent.configure(state='disabled')
     recording = True
-
-    global events
-    events = []
+    _recorded_events = []
     if doMouse:
-        mouse.hook(on_mouse_event)
+        mouse.hook(_on_mouse_event)
     if doKeyboard:
-        keyboard.hook(on_keyboard_event)
+        keyboard.hook(_on_keyboard_event)
 
 def stopMacro(e):
     if 'down' not in e:
@@ -337,15 +370,14 @@ def stopMacro(e):
         MacroStop.configure(text='Stopping', state='disabled')
         showStatus.configure(text='Status: Saving Macro')
         try:
-            mouse.unhook(on_mouse_event)
+            mouse.unhook(_on_mouse_event)
         except Exception:
             pass
         try:
-            keyboard.unhook(on_keyboard_event)
+            keyboard.unhook(_on_keyboard_event)
         except Exception:
             pass
         initiate_hotkeys()
-        # Save in background thread
         threading.Thread(target=_save_recorded_macro, daemon=True).start()
     elif playing:
         macro_eng.stop()
@@ -357,77 +389,75 @@ def stopMacro(e):
         macroContent.configure(state='normal')
 
 def _save_recorded_macro():
-    """Process raw events into readable macro format."""
+    """Process structured events into macro commands. GUI updates via root.after()."""
     global saving
     saving = True
     result_lines = []
-    lastTime = 0
-    lastXY = (None, None)
+    last_time = 0.0
+    last_xy = (None, None)
+    skip_keys = {clickerHotkey.lower(), macroPlayHotkey.lower(),
+                 macroStopHotkey.lower(), macroRecordHotkey.lower()}
 
-    for ev in events:
+    for ev in _recorded_events:
         try:
-            line = str(ev)
-            if line.startswith('(KeyboardEvent') and 'Unknown' not in line:
-                line = line[1:-1].strip().split()
-                etime = float(line[-1])
-                if lastTime:
-                    result_lines.append(f'Delay {round(etime - lastTime, 3)}')
-                lastTime = etime
-                if len(line) == 4:
-                    result_lines.append(f'{line[0]} {line[1]} {line[2].rstrip(",")}')
-                else:
-                    key = line[0].split('(')[1]
-                    skip_keys = {clickerHotkey.lower(), macroPlayHotkey.lower(),
-                                 macroStopHotkey.lower(), macroRecordHotkey.lower()}
-                    if key in skip_keys:
-                        continue
-                    result_lines.append(f'{line[0]} {line[1].rstrip(",")}')
-            elif line.startswith('MoveEvent'):
-                parts = line[:-1].strip().split()
-                x_val = parts[0].replace('MoveEvent(', '').replace('x=', '').rstrip(',')
-                y_val = parts[1].replace('y=', '').rstrip(',')
-                if (x_val, y_val) != lastXY:
-                    etime = float(parts[2].replace('time=', '').rstrip(')'))
-                    if lastTime:
-                        result_lines.append(f'Delay {round(etime - lastTime, 3)}')
-                    lastTime = etime
-                    lastXY = (x_val, y_val)
-                    result_lines.append(f'MoveEvent x={x_val} y={y_val}')
-            elif line.startswith('ButtonEvent'):
-                parts = line[:-1].strip().split()
-                etime = float(parts[2].replace('time=', '').rstrip(')'))
-                if lastTime:
-                    result_lines.append(f'Delay {round(etime - lastTime, 3)}')
-                lastTime = etime
-                evt = parts[0].replace('event_type', 'type').replace('(', ' ').rstrip(',')
-                if 'double' in evt:
-                    evt = evt.replace('double', 'down')
-                result_lines.append(f'{evt} {parts[1].rstrip(",").replace("'","")}'.replace(',', ''))
-            elif line.startswith('WheelEvent'):
-                parts = line[:-1].strip().split()
-                etime = float(parts[1].replace('time=', '').rstrip(')'))
-                if lastTime:
-                    result_lines.append(f'Delay {round(etime - lastTime, 3)}')
-                lastTime = etime
-                result_lines.append(parts[0].replace('(', ' ').rstrip(',').split('.')[0])
+            if ev[0] == 'move':
+                _, x, y, t = ev
+                if (x, y) != last_xy:
+                    if last_time:
+                        result_lines.append(f'Delay {round(t - last_time, 4)}')
+                    last_time = t
+                    last_xy = (x, y)
+                    result_lines.append(f'MoveEvent x={x} y={y}')
+
+            elif ev[0] == 'button':
+                _, evt_type, btn, t = ev
+                if last_time:
+                    result_lines.append(f'Delay {round(t - last_time, 4)}')
+                last_time = t
+                result_lines.append(f'ButtonEvent type={evt_type} button={btn}')
+
+            elif ev[0] == 'wheel':
+                _, delta, t = ev
+                if last_time:
+                    result_lines.append(f'Delay {round(t - last_time, 4)}')
+                last_time = t
+                result_lines.append(f'WheelEvent delta={delta}')
+
+            elif ev[0] == 'key':
+                _, name, etype, t = ev
+                if name.lower() in skip_keys:
+                    continue
+                if last_time:
+                    result_lines.append(f'Delay {round(t - last_time, 4)}')
+                last_time = t
+                result_lines.append(f'KeyboardEvent {name} {etype}')
+
         except Exception:
             continue
 
     macro_text = '\n'.join(result_lines)
-    with open("Macros/lastMacro.txt", "w") as f:
-        f.write(macro_text)
+    try:
+        with open('Macros/lastMacro.txt', 'w') as f:
+            f.write(macro_text)
+    except IOError:
+        pass
 
-    macroContent.configure(state='normal')
-    macroContent.delete('0.0', 'end')
-    macroContent.insert('0.0', macro_text)
-    files = [x.split('.')[0] for x in os.listdir('Macros')]
-    MacroFile.configure(values=files)
-    showStatus.configure(text='Status: Stopped')
-    showWarning.configure(text='Warning: None', text_color=('black', 'white'))
-    MacroRecord.configure(state='enabled')
-    MacroPlay.configure(state='enabled')
-    MacroStop.configure(text=f'Stop ({macroStopHotkey})', state='disabled')
-    saving = False
+    # Thread-safe GUI update — schedule on main thread
+    def _update_gui():
+        global saving
+        macroContent.configure(state='normal')
+        macroContent.delete('0.0', 'end')
+        macroContent.insert('0.0', macro_text)
+        files = [x.split('.')[0] for x in os.listdir('Macros')]
+        MacroFile.configure(values=files)
+        showStatus.configure(text='Status: Stopped')
+        showWarning.configure(text='Warning: None', text_color=('black', 'white'))
+        MacroRecord.configure(state='enabled')
+        MacroPlay.configure(state='enabled')
+        MacroStop.configure(text=f'Stop ({macroStopHotkey})', state='disabled')
+        saving = False
+
+    root.after(0, _update_gui)
 
 def startMacro(e):
     if 'down' not in e:
@@ -457,7 +487,8 @@ def startMacro(e):
     macro_eng.do_key_down = lambda k: keyboard.press(k)
     macro_eng.do_key_up = lambda k: keyboard.release(k)
     macro_eng.do_type_text = lambda t, d: keyboard.write(text=t, delay=d)
-    macro_eng.do_warn = lambda ln, msg: showWarning.configure(text=f'Warning: Line {ln} error', text_color='orange')
+    macro_eng.do_warn = lambda ln, msg: root.after(0, lambda: showWarning.configure(
+        text=f'Warning: L{ln}: {msg[:30]}', text_color='orange'))
 
     playing = True
     showStatus.configure(text='Status: Playing Macro')
@@ -465,7 +496,7 @@ def startMacro(e):
     MacroPlay.configure(state='disabled')
     MacroStop.configure(state='enabled')
     macroContent.configure(state='disabled')
-    macro_eng.play(macroContent.get('0.0', 'end'))
+    macro_eng.play(macroContent.get('0.0', 'end').rstrip())
 
     def _watch():
         global playing

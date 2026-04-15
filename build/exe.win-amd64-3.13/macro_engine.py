@@ -1,6 +1,9 @@
-"""Enhanced Macro Engine — adds Loop/EndLoop, Random delay, improved parsing."""
-import time, random, threading
+"""Enhanced Macro Engine v3 — Loop/EndLoop, RandomDelay, robust parsing.
+All command parsing is isolated into named methods for testability.
+"""
+import time, random, threading, re
 from core_engine import precision_sleep
+
 
 class MacroEngine:
     """Plays macro scripts with extended command set."""
@@ -9,26 +12,26 @@ class MacroEngine:
         self._active = threading.Event()
         self._stop = threading.Event()
         self._thread = None
-        self.repeat_count = 0  # 0 = toggle (infinite)
+        self.repeat_count = 0
         self.use_repeat = False
         self.delay_override = None
         self.delay_offset = 0.0
         self.use_delay_offset = False
         self.restrict_hwnd = None
-        # Callbacks — set by GUI
-        self.do_mouse_move = None      # (x, y, speed)
-        self.do_mouse_click = None     # (button,)
-        self.do_mouse_click_at = None  # (button, x, y, speed)
-        self.do_mouse_down = None      # (button,)
-        self.do_mouse_up = None        # (button,)
-        self.do_mouse_wheel = None     # (direction, clicks)
-        self.do_mouse_drag = None      # (button, speed, x1, y1, x2, y2)
-        self.do_key_press = None       # (key,)
-        self.do_key_down = None        # (key,)
-        self.do_key_up = None          # (key,)
-        self.do_type_text = None       # (text, delay)
-        self.do_warn = None            # (line_num, msg)
-        self.check_restrict = None     # () -> bool
+        # Callbacks — set by GUI before play()
+        self.do_mouse_move = None
+        self.do_mouse_click = None
+        self.do_mouse_click_at = None
+        self.do_mouse_down = None
+        self.do_mouse_up = None
+        self.do_mouse_wheel = None
+        self.do_mouse_drag = None
+        self.do_key_press = None
+        self.do_key_down = None
+        self.do_key_up = None
+        self.do_type_text = None
+        self.do_warn = None
+        self.check_restrict = None
         self.hotkeys = set()
 
     @property
@@ -49,6 +52,8 @@ class MacroEngine:
         self._active.clear()
         self._stop.set()
 
+    # ── Timing ────────────────────────────────────────────────
+
     def _sleep(self, seconds):
         if seconds <= 0:
             return True
@@ -63,36 +68,63 @@ class MacroEngine:
             d += random.uniform(-self.delay_offset, self.delay_offset)
         return max(0, d)
 
+    # ── Pre-compiled patterns ─────────────────────────────────
+
+    _RE_DELAY = re.compile(r'^delay\s+([\d.]+)', re.IGNORECASE)
+    _RE_RANDOM_DELAY = re.compile(r'^randomdelay\s+([\d.]+)\s+([\d.]+)', re.IGNORECASE)
+    _RE_MOVE_EVENT = re.compile(r'^moveevent\s+x=([\d-]+)\s+y=([\d-]+)', re.IGNORECASE)
+    _RE_MOVE = re.compile(r'^move\s+x=([\d-]+)\s+y=([\d-]+)\s+speed=(\d+)', re.IGNORECASE)
+    _RE_BUTTON_EVENT = re.compile(r'^buttonevent\s+type=(\w+)\s+button=(\w+)', re.IGNORECASE)
+    _RE_CLICK_AT = re.compile(r'^click\s+at\s+button=(\w+)\s+x=([\d-]+)\s+y=([\d-]+)\s+speed=(\d+)', re.IGNORECASE)
+    _RE_CLICK = re.compile(r'^click\s+button=(\w+)', re.IGNORECASE)
+    _RE_WHEEL = re.compile(r'^wheelevent\s+delta=([\d.-]+)', re.IGNORECASE)
+    _RE_DRAG = re.compile(r'^drag\s+button=(\w+)\s+speed=(\d+)\s+x=(\d+)\s+y=(\d+)\s+to\s+x=(\d+)\s+y=(\d+)', re.IGNORECASE)
+    _RE_KEYBOARD = re.compile(r'^keyboardevent\s+(.+?)\s+(down|up)', re.IGNORECASE)
+    _RE_PRESSKEY = re.compile(r'^presskey\s+(.+)', re.IGNORECASE)
+    _RE_TYPE = re.compile(r'^type\s+speed=([\d.]+)\s*\((.+)\)', re.IGNORECASE)
+    _RE_LOOP = re.compile(r'^loop\s+(\d+)', re.IGNORECASE)
+    _RE_WAIT = re.compile(r'^wait\s+([\d.]+)', re.IGNORECASE)
+    _RE_SLEEP = re.compile(r'^sleep\s+([\d.]+)', re.IGNORECASE)
+
+    # ── Main execution ────────────────────────────────────────
+
     def _run(self, script_text):
         lines = script_text.strip().splitlines()
+        if not lines:
+            self._active.clear()
+            return
+
         times_played = 0
         skip_once = set()
 
         # Pre-scan for Loop/EndLoop pairs
-        loop_map = {}  # endloop_idx -> (start_idx, count)
+        loop_map = {}   # endloop_idx -> (start_idx, count)
         loop_stack = []
-        for i, line in enumerate(lines):
-            stripped = line.strip().lower()
-            if stripped.startswith('loop '):
-                try:
-                    count = int(stripped.split()[1])
-                except (ValueError, IndexError):
-                    count = 1
-                loop_stack.append((i, count))
-            elif stripped == 'endloop' and loop_stack:
+        for idx, raw in enumerate(lines):
+            stripped = raw.strip()
+            m = self._RE_LOOP.match(stripped)
+            if m:
+                loop_stack.append((idx, int(m.group(1))))
+            elif stripped.lower() == 'endloop' and loop_stack:
                 start_i, count = loop_stack.pop()
-                loop_map[i] = (start_i, count)
+                loop_map[idx] = (start_i, count)
+
+        # Warn about unmatched loops
+        if loop_stack and self.do_warn:
+            for start_i, _ in loop_stack:
+                self.do_warn(start_i + 1, 'Loop without matching EndLoop')
 
         while self._active.is_set():
             if self.use_repeat and times_played >= self.repeat_count:
                 break
 
-            # Loop counters for this playthrough
-            loop_counters = {}  # endloop_idx -> remaining
+            loop_counters = {}
             i = 0
             while i < len(lines) and self._active.is_set():
-                line = lines[i].strip()
-                if not line:
+                raw = lines[i].strip()
+
+                # Empty line
+                if not raw:
                     i += 1
                     continue
 
@@ -101,27 +133,32 @@ class MacroEngine:
                     time.sleep(0.001)
                     continue
 
-                low = line.lower()
-
                 try:
-                    # Skip-once lines (*)
-                    if low.startswith('*'):
+                    line = raw
+
+                    # Skip-once prefix (*)
+                    if line.startswith('*'):
                         if i in skip_once:
                             i += 1
                             continue
                         skip_once.add(i)
                         line = line[1:].strip()
-                        low = line.lower()
+                        if not line:
+                            i += 1
+                            continue
 
-                    # Comment lines (#)
-                    if low.startswith('#'):
+                    # Comment (#)
+                    if line.startswith('#'):
                         i += 1
                         continue
 
-                    # Loop/EndLoop
-                    if low.startswith('loop '):
+                    low = line.lower()
+
+                    # ── Loop/EndLoop ──
+                    if low.startswith('loop ') and self._RE_LOOP.match(line):
                         i += 1
                         continue
+
                     if low == 'endloop':
                         if i in loop_map:
                             if i not in loop_counters:
@@ -133,102 +170,128 @@ class MacroEngine:
                         i += 1
                         continue
 
-                    # Delay
-                    if low.startswith('delay'):
-                        parts = low.split()
-                        d = self._get_delay(float(parts[1]))
+                    # ── Delay ──
+                    m = self._RE_DELAY.match(line)
+                    if m:
+                        d = self._get_delay(float(m.group(1)))
                         if not self._sleep(d):
                             break
+                        i += 1
+                        continue
 
-                    # Random delay: RandomDelay MIN MAX
-                    elif low.startswith('randomdelay'):
-                        parts = low.split()
-                        mn, mx = float(parts[1]), float(parts[2])
+                    # ── RandomDelay ──
+                    m = self._RE_RANDOM_DELAY.match(line)
+                    if m:
+                        mn, mx = float(m.group(1)), float(m.group(2))
                         d = random.uniform(mn, mx)
                         if not self._sleep(d):
                             break
+                        i += 1
+                        continue
 
-                    # Keyboard events
-                    elif low.startswith('keyboardevent'):
-                        ev = line.replace('(', ' ', 1)[:-1].split()
-                        key = ev[1] if len(ev) >= 3 else None
-                        if key and key.lower() not in self.hotkeys:
-                            if len(ev) == 4:
-                                full_key = f'{ev[1]} {ev[2]}'
-                                action = ev[3]
-                            else:
-                                full_key = ev[1]
-                                action = ev[2]
+                    # ── Wait / Sleep (aliases for Delay) ──
+                    m = self._RE_WAIT.match(line) or self._RE_SLEEP.match(line)
+                    if m:
+                        d = self._get_delay(float(m.group(1)))
+                        if not self._sleep(d):
+                            break
+                        i += 1
+                        continue
+
+                    # ── MoveEvent ──
+                    m = self._RE_MOVE_EVENT.match(line)
+                    if m and self.do_mouse_move:
+                        self.do_mouse_move(int(m.group(1)), int(m.group(2)), 0)
+                        i += 1
+                        continue
+
+                    # ── Move (manual with speed) ──
+                    m = self._RE_MOVE.match(line)
+                    if m and self.do_mouse_move:
+                        self.do_mouse_move(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+                        i += 1
+                        continue
+
+                    # ── ButtonEvent ──
+                    m = self._RE_BUTTON_EVENT.match(line)
+                    if m:
+                        action = m.group(1).lower()
+                        button = m.group(2)
+                        if action == 'down' and self.do_mouse_down:
+                            self.do_mouse_down(button)
+                        elif action == 'up' and self.do_mouse_up:
+                            self.do_mouse_up(button)
+                        i += 1
+                        continue
+
+                    # ── Click at position ──
+                    m = self._RE_CLICK_AT.match(line)
+                    if m and self.do_mouse_click_at:
+                        self.do_mouse_click_at(m.group(1), int(m.group(2)), int(m.group(3)), int(m.group(4)))
+                        i += 1
+                        continue
+
+                    # ── Click ──
+                    m = self._RE_CLICK.match(line)
+                    if m and self.do_mouse_click:
+                        self.do_mouse_click(m.group(1))
+                        i += 1
+                        continue
+
+                    # ── WheelEvent ──
+                    m = self._RE_WHEEL.match(line)
+                    if m and self.do_mouse_wheel:
+                        delta = int(float(m.group(1)))
+                        direction = 'down' if delta < 0 else 'up'
+                        self.do_mouse_wheel(direction, max(1, abs(delta)))
+                        i += 1
+                        continue
+
+                    # ── Drag ──
+                    m = self._RE_DRAG.match(line)
+                    if m and self.do_mouse_drag:
+                        self.do_mouse_drag(
+                            m.group(1), int(m.group(2)),
+                            int(m.group(3)), int(m.group(4)),
+                            int(m.group(5)), int(m.group(6))
+                        )
+                        i += 1
+                        continue
+
+                    # ── KeyboardEvent ──
+                    m = self._RE_KEYBOARD.match(line)
+                    if m:
+                        key = m.group(1).strip().rstrip(',')
+                        action = m.group(2).lower()
+                        if key.lower() not in self.hotkeys:
                             if action == 'down' and self.do_key_down:
-                                self.do_key_down(full_key)
+                                self.do_key_down(key)
                             elif action == 'up' and self.do_key_up:
-                                self.do_key_up(full_key)
+                                self.do_key_up(key)
+                        i += 1
+                        continue
 
-                    # PressKey
-                    elif low.startswith('presskey'):
-                        key = line.replace('(', ' ', 1)[:-1].split()[1]
+                    # ── PressKey ──
+                    m = self._RE_PRESSKEY.match(line)
+                    if m:
+                        key = m.group(1).strip()
                         if key.lower() not in self.hotkeys and self.do_key_press:
                             self.do_key_press(key)
+                        i += 1
+                        continue
 
-                    # Type
-                    elif low.startswith('type'):
-                        text = line.split('(', 1)[1][:-1]
-                        parts = low.split()
-                        spd = float(parts[1].replace('speed=', ''))
-                        if self.do_type_text:
-                            self.do_type_text(text, spd)
+                    # ── Type ──
+                    m = self._RE_TYPE.match(line)
+                    if m and self.do_type_text:
+                        speed = float(m.group(1))
+                        text = m.group(2)
+                        self.do_type_text(text, speed)
+                        i += 1
+                        continue
 
-                    # MoveEvent
-                    elif low.startswith('moveevent'):
-                        cleaned = low.replace('x=', '').replace('y=', '')
-                        parts = cleaned.split()
-                        if self.do_mouse_move:
-                            self.do_mouse_move(int(parts[1]), int(parts[2]), 0)
-
-                    # Move (manual)
-                    elif low.startswith('move') and not low.startswith('moveevent'):
-                        cleaned = low.replace('x=', '').replace('y=', '').replace('speed=', '')
-                        parts = cleaned.split()
-                        if self.do_mouse_move:
-                            self.do_mouse_move(int(parts[1]), int(parts[2]), int(parts[3]))
-
-                    # ButtonEvent
-                    elif low.startswith('buttonevent'):
-                        cleaned = low.replace('type=', '').replace('button=', '')
-                        parts = cleaned.split()
-                        if parts[1] == 'down' and self.do_mouse_down:
-                            self.do_mouse_down(parts[2])
-                        elif parts[1] == 'up' and self.do_mouse_up:
-                            self.do_mouse_up(parts[2])
-
-                    # Click
-                    elif low.startswith('click'):
-                        if 'at' in low:
-                            cleaned = low.replace('button=', '').replace('x=', '').replace('y=', '').replace('speed=', '')
-                            parts = cleaned.split()
-                            if self.do_mouse_click_at:
-                                self.do_mouse_click_at(parts[1], int(parts[3]), int(parts[4]), int(parts[5]))
-                        else:
-                            cleaned = low.replace('button=', '')
-                            parts = cleaned.split()
-                            if self.do_mouse_click:
-                                self.do_mouse_click(parts[1])
-
-                    # WheelEvent
-                    elif low.startswith('wheelevent'):
-                        cleaned = low.replace('delta=', '')
-                        parts = cleaned.split()
-                        delta = int(parts[1].split('.')[0])
-                        if self.do_mouse_wheel:
-                            direction = 'down' if delta < 0 else 'up'
-                            self.do_mouse_wheel(direction, abs(delta))
-
-                    # Drag
-                    elif low.startswith('drag'):
-                        cleaned = low.replace('button=', '').replace('x=', '').replace('y=', '').replace('speed=', '')
-                        parts = cleaned.split()
-                        if self.do_mouse_drag:
-                            self.do_mouse_drag(parts[1], int(parts[2]), int(parts[3]), int(parts[4]), int(parts[6]), int(parts[7]))
+                    # Unknown command — warn but don't crash
+                    if self.do_warn:
+                        self.do_warn(i + 1, f'Unknown command: {line[:40]}')
 
                 except Exception as e:
                     if self.do_warn:
