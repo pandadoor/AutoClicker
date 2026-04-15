@@ -9,11 +9,11 @@ from subprocess import Popen, CREATE_NO_WINDOW
 # --- Load engine modules ---
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from core_engine import (load_settings, save_settings, CPSCounter,
-                          ClickEngine, ProfileManager)
+                          ClickEngine, ProfileManager, HAS_DIRECT_INPUT)
 from macro_engine import MacroEngine
 
 settings = load_settings()
-version = '2.0.0-power'
+version = '3.0.0-zero-latency'
 
 if settings.get('simple', False):
     try:
@@ -45,8 +45,11 @@ except FileNotFoundError:
 # ============================================================
 root = customtkinter.CTk()
 superClicker = settings.get('superClicker', False)
-title_base = "AutoClicker & Macro — Power Edition"
-title = f'{title_base} - SuperMode' if superClicker else title_base
+title_base = "AutoClicker & Macro — Zero-Latency Edition"
+input_mode = 'DirectInput' if HAS_DIRECT_INPUT else 'AutoIt'
+title = f'{title_base} [{input_mode}]'
+if superClicker:
+    title += ' - SuperMode'
 root.title(title)
 root.geometry('850x520')
 root.attributes('-topmost', settings.get('onTop', True))
@@ -192,9 +195,8 @@ def check():
     showWarning.configure(text='Warning: None', text_color=('black', 'white'))
     return True
 
-def perform_click(button, position=None):
-    """Callback for ClickEngine — performs the actual click."""
-    global pressButton
+def perform_click_fallback(button, position=None):
+    """Fallback click via AutoIt — used only for ghost-click mode."""
     if position:
         autoit.mouse_move(x=position[0], y=position[1], speed=0)
 
@@ -212,10 +214,9 @@ def perform_click(button, position=None):
         time.sleep(click_engine.hold_duration)
         autoit.mouse_up(button=button)
     else:
-        for _ in range(click_engine.click_type):
-            autoit.mouse_click(button=button)
+        autoit.mouse_click(button=button, clicks=click_engine.click_type)
 
-click_engine.on_click = perform_click
+click_engine.on_click = perform_click_fallback
 
 def toggle_clicker(e):
     if 'down' not in e:
@@ -235,6 +236,7 @@ def toggle_clicker(e):
         # Configure engine
         click_engine.delay_ms = delay
         click_engine.click_offset_ms = Clickoffset
+        click_engine.use_direct_input = not ghostClick_switch.get()
         click_engine.use_interval_offset = interval_switch.get()
         click_engine.use_mouse_offset = mouse_switch.get()
         click_engine.mouse_offset_x = MouseoffsetX

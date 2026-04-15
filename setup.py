@@ -8,6 +8,7 @@ build_options = {
         "win32gui", "win32ui", "win32con", "win32api",
         "tkinter", "json", "threading", "time", "random",
         "ctypes", "subprocess", "os", "sys", "requests",
+        "collections",
     ],
     "includes": ["core_engine", "macro_engine"],
     "include_files": [

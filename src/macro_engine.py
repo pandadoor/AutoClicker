@@ -1,5 +1,6 @@
 """Enhanced Macro Engine — adds Loop/EndLoop, Random delay, improved parsing."""
 import time, random, threading
+from core_engine import precision_sleep
 
 class MacroEngine:
     """Plays macro scripts with extended command set."""
@@ -51,16 +52,7 @@ class MacroEngine:
     def _sleep(self, seconds):
         if seconds <= 0:
             return True
-        if seconds >= 1:
-            deadline = time.perf_counter() + seconds
-            while time.perf_counter() < deadline:
-                if not self._active.is_set():
-                    return False
-                remaining = deadline - time.perf_counter()
-                time.sleep(min(0.01, max(0, remaining)))
-            return True
-        time.sleep(seconds)
-        return self._active.is_set()
+        return precision_sleep(seconds, self._active)
 
     def _get_delay(self, base_delay):
         if self.delay_override is not None and self.delay_override > 0:
