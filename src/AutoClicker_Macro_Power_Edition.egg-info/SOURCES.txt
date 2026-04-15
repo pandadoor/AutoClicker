@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/AutoClicker_Macro_Power_Edition.egg-info/PKG-INFO
+src/AutoClicker_Macro_Power_Edition.egg-info/SOURCES.txt
+src/AutoClicker_Macro_Power_Edition.egg-info/dependency_links.txt
+src/AutoClicker_Macro_Power_Edition.egg-info/top_level.txt

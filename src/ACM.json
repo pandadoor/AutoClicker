@@ -1,0 +1,21 @@
+{
+  "simple": false,
+  "themeColor": "green",
+  "appearanceMode": "System",
+  "clickerHotkey": "F6",
+  "macroRecordHotkey": "F7",
+  "macroStopHotkey": "F8",
+  "macroPlayHotkey": "F9",
+  "onTop": true,
+  "showMousePosition": true,
+  "superClicker": false,
+  "mouseTimer": false,
+  "windowX": null,
+  "windowY": null,
+  "saveClickerSettings": false,
+  "savedClickerState": {},
+  "profiles": {},
+  "activeProfile": "Default",
+  "scheduledDelay": 0,
+  "scheduledStop": 0
+}
