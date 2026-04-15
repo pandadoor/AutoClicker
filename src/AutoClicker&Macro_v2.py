@@ -599,311 +599,346 @@ def updateWindows(extra):
         for key in windows:
             if key == windows_entry.get():
                 control_window = {key: windows[key]}
-                break
-
-# ============================================================
-# MOUSE POSITION (optimized to 50ms, only when visible)
+       # ============================================================
+# MOUSE POSITION (optimized to 150ms to save RAM/CPU)
 # ============================================================
 def applyMousePosition():
     if settings.get('showMousePosition') and root.state() != 'iconic':
         try:
             pos = autoit.mouse_get_pos()
-            showMouse.configure(text=f'Mouse: {pos}')
+            new_text = f'Mouse: {pos}'
+            if showMouse.cget("text") != new_text:
+                showMouse.configure(text=new_text)
         except Exception:
             pass
-        root.after(50, applyMousePosition)
+        root.after(150, applyMousePosition)
     else:
-        showMouse.configure(text='')
+        if showMouse.cget("text") != '':
+            showMouse.configure(text='')
         root.after(500, applyMousePosition)
 
 # ============================================================
-# BUILD GUI
+# BUILD GUI (Modern CTkTabview & Grid Layout)
 # ============================================================
-menuFrame = customtkinter.CTkFrame(master=root, width=620, height=400)
-menuFrame.place(x=225, y=5)
+tabview = customtkinter.CTkTabview(master=root, width=830, height=450)
+tabview.pack(padx=10, pady=5, fill="both", expand=True)
+
+clickFrame = tabview.add("Auto Clicker")
+macroFrame = tabview.add("Macro")
+settingFrame = tabview.add("Settings")
 
 # --- AUTOCLICKER TAB ---
-clickFrame = customtkinter.CTkFrame(master=root, width=620, height=400)
-clickFrame.place(x=225, y=5)
+# Row 1: Click Interval
+clickInterval = customtkinter.CTkFrame(master=clickFrame)
+clickInterval.pack(fill="x", pady=5, padx=5)
+customtkinter.CTkLabel(master=clickInterval, text='Click Interval:', font=('', 13, 'bold')).grid(row=0, column=0, padx=10, pady=5, sticky='w')
 
-# Click Interval
-clickInterval = customtkinter.CTkFrame(master=clickFrame, width=600, height=80)
-clickInterval.place(x=5, y=5)
-customtkinter.CTkLabel(master=clickInterval, text='Click Interval:').place(x=5, y=1)
-customtkinter.CTkLabel(master=clickInterval, text='ms:').place(x=5, y=35)
-mil_interval = customtkinter.CTkEntry(master=clickInterval, placeholder_text='0', width=70)
-mil_interval.place(x=30, y=35)
-customtkinter.CTkLabel(master=clickInterval, text='sec:').place(x=110, y=35)
-sec_interval = customtkinter.CTkEntry(master=clickInterval, placeholder_text='0', width=70)
-sec_interval.place(x=140, y=35)
-customtkinter.CTkLabel(master=clickInterval, text='min:').place(x=220, y=35)
-min_interval = customtkinter.CTkEntry(master=clickInterval, placeholder_text='0', width=70)
-min_interval.place(x=250, y=35)
-customtkinter.CTkLabel(master=clickInterval, text='hr:').place(x=330, y=35)
-hour_interval = customtkinter.CTkEntry(master=clickInterval, placeholder_text='0', width=70)
-hour_interval.place(x=355, y=35)
+f_int = customtkinter.CTkFrame(master=clickInterval, fg_color="transparent")
+f_int.grid(row=1, column=0, padx=10, pady=5, sticky='w')
+customtkinter.CTkLabel(master=f_int, text='ms:').pack(side="left")
+mil_interval = customtkinter.CTkEntry(master=f_int, placeholder_text='0', width=60)
+mil_interval.pack(side="left", padx=5)
+customtkinter.CTkLabel(master=f_int, text='sec:').pack(side="left", padx=(10,0))
+sec_interval = customtkinter.CTkEntry(master=f_int, placeholder_text='0', width=60)
+sec_interval.pack(side="left", padx=5)
+customtkinter.CTkLabel(master=f_int, text='min:').pack(side="left", padx=(10,0))
+min_interval = customtkinter.CTkEntry(master=f_int, placeholder_text='0', width=60)
+min_interval.pack(side="left", padx=5)
+customtkinter.CTkLabel(master=f_int, text='hr:').pack(side="left", padx=(10,0))
+hour_interval = customtkinter.CTkEntry(master=f_int, placeholder_text='0', width=60)
+hour_interval.pack(side="left", padx=5)
 
-# Scheduling
-customtkinter.CTkLabel(master=clickInterval, text='Start after(s):').place(x=435, y=5)
-sched_delay_entry = customtkinter.CTkEntry(master=clickInterval, placeholder_text='0', width=50)
-sched_delay_entry.place(x=530, y=5)
-customtkinter.CTkLabel(master=clickInterval, text='Stop after(s):').place(x=435, y=35)
-sched_stop_entry = customtkinter.CTkEntry(master=clickInterval, placeholder_text='0', width=50)
-sched_stop_entry.place(x=530, y=35)
+f_sched = customtkinter.CTkFrame(master=clickInterval, fg_color="transparent")
+f_sched.grid(row=1, column=1, padx=(40, 10), pady=5, sticky='w')
+customtkinter.CTkLabel(master=f_sched, text='Start after(s):').grid(row=0, column=0, padx=5, sticky='e')
+sched_delay_entry = customtkinter.CTkEntry(master=f_sched, placeholder_text='0', width=50)
+sched_delay_entry.grid(row=0, column=1, padx=5)
+customtkinter.CTkLabel(master=f_sched, text='Stop after(s):').grid(row=1, column=0, padx=5, sticky='e')
+sched_stop_entry = customtkinter.CTkEntry(master=f_sched, placeholder_text='0', width=50)
+sched_stop_entry.grid(row=1, column=1, padx=5)
 
-# Interval & Mouse Offset
-interval_offset = customtkinter.CTkFrame(master=clickFrame, width=290, height=80)
-interval_offset.place(x=5, y=95)
-interval_switch = customtkinter.CTkSwitch(master=interval_offset, text='Interval offset:')
-interval_switch.place(x=5, y=1)
-customtkinter.CTkLabel(master=interval_offset, text='ms:').place(x=5, y=35)
-interval_entry = customtkinter.CTkEntry(master=interval_offset, placeholder_text='50', width=70)
-interval_entry.place(x=30, y=35)
+# Row 2: Offsets
+f_row2 = customtkinter.CTkFrame(master=clickFrame, fg_color="transparent")
+f_row2.pack(fill="x", pady=5, padx=5)
 
-mouse_offset = customtkinter.CTkFrame(master=clickFrame, width=300, height=80)
-mouse_offset.place(x=305, y=95)
-mouse_switch = customtkinter.CTkSwitch(master=mouse_offset, text='Mouse offset:')
-mouse_switch.place(x=5, y=1)
-customtkinter.CTkLabel(master=mouse_offset, text='X:').place(x=5, y=35)
-mouseX_entry = customtkinter.CTkEntry(master=mouse_offset, placeholder_text='25', width=45)
-mouseX_entry.place(x=25, y=35)
-customtkinter.CTkLabel(master=mouse_offset, text='Y:').place(x=75, y=35)
-mouseY_entry = customtkinter.CTkEntry(master=mouse_offset, placeholder_text='25', width=45)
-mouseY_entry.place(x=95, y=35)
+interval_offset = customtkinter.CTkFrame(master=f_row2)
+interval_offset.pack(side="left", fill="x", expand=True, padx=(0, 5))
+interval_switch = customtkinter.CTkSwitch(master=interval_offset, text='Interval offset (ms):', font=('', 12, 'bold'))
+interval_switch.pack(anchor='w', padx=10, pady=5)
+f_io = customtkinter.CTkFrame(master=interval_offset, fg_color="transparent")
+f_io.pack(anchor='w', padx=10, pady=5)
+customtkinter.CTkLabel(master=f_io, text='ms:').pack(side='left')
+interval_entry = customtkinter.CTkEntry(master=f_io, placeholder_text='50', width=70)
+interval_entry.pack(side='left', padx=5)
 
-# Click Options
-clickOption = customtkinter.CTkFrame(master=clickFrame, width=600, height=80)
-clickOption.place(x=5, y=185)
-customtkinter.CTkLabel(master=clickOption, text='Click Options:').place(x=5, y=1)
-customtkinter.CTkLabel(master=clickOption, text='Button:').place(x=5, y=35)
-mouseButton_entry = customtkinter.CTkOptionMenu(master=clickOption, values=['Left', 'Right', 'Middle'], width=90)
-mouseButton_entry.place(x=55, y=35)
-customtkinter.CTkLabel(master=clickOption, text='Type:').place(x=155, y=35)
-mouseType_entry = customtkinter.CTkOptionMenu(master=clickOption, values=['Single', 'Double', 'Triple'], width=90)
-mouseType_entry.place(x=195, y=35)
-customtkinter.CTkLabel(master=clickOption, text='Hold(s):').place(x=305, y=35)
-holdDuration = customtkinter.CTkEntry(master=clickOption, placeholder_text='0', width=45)
-holdDuration.place(x=355, y=35)
-alternatingBox = customtkinter.CTkCheckBox(master=clickOption, text='Alternating', onvalue=True, offvalue=False)
-alternatingBox.place(x=420, y=35)
+mouse_offset = customtkinter.CTkFrame(master=f_row2)
+mouse_offset.pack(side="left", fill="x", expand=True, padx=(5, 0))
+mouse_switch = customtkinter.CTkSwitch(master=mouse_offset, text='Mouse offset (px):', font=('', 12, 'bold'))
+mouse_switch.pack(anchor='w', padx=10, pady=5)
+f_mo = customtkinter.CTkFrame(master=mouse_offset, fg_color="transparent")
+f_mo.pack(anchor='w', padx=10, pady=5)
+customtkinter.CTkLabel(master=f_mo, text='X:').pack(side='left')
+mouseX_entry = customtkinter.CTkEntry(master=f_mo, placeholder_text='25', width=50)
+mouseX_entry.pack(side='left', padx=5)
+customtkinter.CTkLabel(master=f_mo, text='Y:').pack(side='left', padx=(10,0))
+mouseY_entry = customtkinter.CTkEntry(master=f_mo, placeholder_text='25', width=50)
+mouseY_entry.pack(side='left', padx=5)
 
-# Cursor Position
-cursorPosition = customtkinter.CTkFrame(master=clickFrame, width=250, height=80)
-cursorPosition.place(x=5, y=275)
+# Row 3: Click Options
+clickOption = customtkinter.CTkFrame(master=clickFrame)
+clickOption.pack(fill="x", pady=5, padx=5)
+customtkinter.CTkLabel(master=clickOption, text='Click Options:', font=('', 13, 'bold')).pack(anchor='w', padx=10, pady=(5,0))
+f_co = customtkinter.CTkFrame(master=clickOption, fg_color="transparent")
+f_co.pack(fill="x", padx=10, pady=5)
+customtkinter.CTkLabel(master=f_co, text='Button:').pack(side='left')
+mouseButton_entry = customtkinter.CTkOptionMenu(master=f_co, values=['Left', 'Right', 'Middle'], width=90)
+mouseButton_entry.pack(side='left', padx=5)
+customtkinter.CTkLabel(master=f_co, text='Type:').pack(side='left', padx=(15,0))
+mouseType_entry = customtkinter.CTkOptionMenu(master=f_co, values=['Single', 'Double', 'Triple'], width=90)
+mouseType_entry.pack(side='left', padx=5)
+customtkinter.CTkLabel(master=f_co, text='Hold(s):').pack(side='left', padx=(15,0))
+holdDuration = customtkinter.CTkEntry(master=f_co, placeholder_text='0', width=50)
+holdDuration.pack(side='left', padx=5)
+alternatingBox = customtkinter.CTkCheckBox(master=f_co, text='Alternating', onvalue=True, offvalue=False)
+alternatingBox.pack(side='left', padx=(15,0))
+
+# Row 4: Targeting & Repeat
+f_row4 = customtkinter.CTkFrame(master=clickFrame, fg_color="transparent")
+f_row4.pack(fill="x", pady=5, padx=5)
+
+cursorPosition = customtkinter.CTkFrame(master=f_row4)
+cursorPosition.pack(side="left", fill="both", expand=True, padx=(0, 5))
+customtkinter.CTkLabel(master=cursorPosition, text='Cursor Position:', font=('', 13, 'bold')).pack(anchor='w', padx=10, pady=5)
 position_var = tkinter.IntVar(value=0)
-customtkinter.CTkLabel(master=cursorPosition, text='Cursor Position:').place(x=5, y=1)
-current = customtkinter.CTkRadioButton(master=cursorPosition, text='Current', variable=position_var, value=0, radiobutton_height=10, radiobutton_width=10)
-current.place(x=5, y=25)
-custom = customtkinter.CTkRadioButton(master=cursorPosition, text='Custom', variable=position_var, value=1, radiobutton_height=10, radiobutton_width=10)
-custom.place(x=5, y=45)
-customtkinter.CTkLabel(master=cursorPosition, text='X:').place(x=75, y=43)
-mouseX_position = customtkinter.CTkEntry(master=cursorPosition, placeholder_text='0', width=45)
-mouseX_position.place(x=95, y=43)
-customtkinter.CTkLabel(master=cursorPosition, text='Y:').place(x=150, y=43)
-mouseY_position = customtkinter.CTkEntry(master=cursorPosition, placeholder_text='0', width=45)
-mouseY_position.place(x=170, y=43)
+f_cp1 = customtkinter.CTkFrame(master=cursorPosition, fg_color="transparent")
+f_cp1.pack(anchor='w', padx=10)
+customtkinter.CTkRadioButton(master=f_cp1, text='Current', variable=position_var, value=0).pack(side='left', pady=2)
+f_cp2 = customtkinter.CTkFrame(master=cursorPosition, fg_color="transparent")
+f_cp2.pack(anchor='w', padx=10)
+customtkinter.CTkRadioButton(master=f_cp2, text='Custom  X:', variable=position_var, value=1).pack(side='left', pady=2)
+mouseX_position = customtkinter.CTkEntry(master=f_cp2, placeholder_text='0', width=45)
+mouseX_position.pack(side='left', padx=5)
+customtkinter.CTkLabel(master=f_cp2, text='Y:').pack(side='left')
+mouseY_position = customtkinter.CTkEntry(master=f_cp2, placeholder_text='0', width=45)
+mouseY_position.pack(side='left', padx=5)
 
-# Multi-point Clicking
-mpFrame = customtkinter.CTkFrame(master=clickFrame, width=145, height=80)
-mpFrame.place(x=260, y=275)
-customtkinter.CTkLabel(master=mpFrame, text='Multi-Point (x,y):').place(x=5, y=1)
-multipoint_entry = customtkinter.CTkTextbox(master=mpFrame, width=135, height=50)
-multipoint_entry.place(x=5, y=25)
+mpFrame = customtkinter.CTkFrame(master=f_row4)
+mpFrame.pack(side="left", fill="both", expand=True, padx=5)
+customtkinter.CTkLabel(master=mpFrame, text='Multi-Point (x,y):', font=('', 13, 'bold')).pack(anchor='w', padx=10, pady=5)
+multipoint_entry = customtkinter.CTkTextbox(master=mpFrame, width=150, height=50)
+multipoint_entry.pack(padx=10, pady=(0,5))
 
-# Repeat Options
-autoController = customtkinter.CTkFrame(master=clickFrame, width=185, height=80)
-autoController.place(x=415, y=275)
-customtkinter.CTkLabel(master=autoController, text='Repeat:').place(x=5, y=1)
+autoController = customtkinter.CTkFrame(master=f_row4)
+autoController.pack(side="left", fill="both", expand=True, padx=(5, 0))
+customtkinter.CTkLabel(master=autoController, text='Repeat:', font=('', 13, 'bold')).pack(anchor='w', padx=10, pady=5)
 repeat_var = tkinter.IntVar(value=0)
-customtkinter.CTkRadioButton(master=autoController, text='Toggle', variable=repeat_var, value=0).place(x=5, y=25)
-customtkinter.CTkRadioButton(master=autoController, text='Repeat', variable=repeat_var, value=1).place(x=5, y=50)
-repeatTimes = customtkinter.CTkEntry(master=autoController, placeholder_text='1', width=50)
-repeatTimes.place(x=80, y=48)
+customtkinter.CTkRadioButton(master=autoController, text='Toggle', variable=repeat_var, value=0).pack(anchor='w', padx=10, pady=2)
+f_rep = customtkinter.CTkFrame(master=autoController, fg_color="transparent")
+f_rep.pack(anchor='w', padx=10, pady=2)
+customtkinter.CTkRadioButton(master=f_rep, text='Repeat', variable=repeat_var, value=1).pack(side='left')
+repeatTimes = customtkinter.CTkEntry(master=f_rep, placeholder_text='1', width=50)
+repeatTimes.pack(side='left', padx=5)
 
-autoStart = customtkinter.CTkButton(master=clickFrame, text=f'Start ({clickerHotkey})', command=lambda: toggle_clicker('down'))
-autoStart.place(x=160, y=365)
-autoStop = customtkinter.CTkButton(master=clickFrame, text=f'Stop ({clickerHotkey})', state='disabled', command=lambda: toggle_clicker('down'))
-autoStop.place(x=320, y=365)
+# Row 5: Actions
+f_actions = customtkinter.CTkFrame(master=clickFrame, fg_color="transparent")
+f_actions.pack(pady=10)
+autoStart = customtkinter.CTkButton(master=f_actions, text=f'Start ({clickerHotkey})', command=lambda: toggle_clicker('down'), width=150, height=35)
+autoStart.pack(side='left', padx=10)
+autoStop = customtkinter.CTkButton(master=f_actions, text=f'Stop ({clickerHotkey})', state='disabled', command=lambda: toggle_clicker('down'), width=150, height=35, fg_color="#C0392B", hover_color="#922B21")
+autoStop.pack(side='left', padx=10)
+
 
 # --- MACRO TAB ---
-macroFrame = customtkinter.CTkFrame(master=root, width=620, height=400)
+macroOptions = customtkinter.CTkFrame(master=macroFrame)
+macroOptions.pack(fill="x", pady=5, padx=5)
 
-macroOptions = customtkinter.CTkFrame(master=macroFrame, width=600, height=100)
-macroOptions.place(x=5, y=5)
-customtkinter.CTkLabel(master=macroOptions, text='Capture:').place(x=5, y=5)
-keyboardMacro_switch = customtkinter.CTkSwitch(master=macroOptions, text='Keyboard', variable=customtkinter.BooleanVar(value=True))
-keyboardMacro_switch.place(x=5, y=30)
-MouseMacro_switch = customtkinter.CTkSwitch(master=macroOptions, text='Mouse', variable=customtkinter.BooleanVar(value=True))
-MouseMacro_switch.place(x=5, y=55)
+f_mco = customtkinter.CTkFrame(master=macroOptions, fg_color="transparent")
+f_mco.pack(side='left', fill='both', expand=True, padx=10, pady=5)
+customtkinter.CTkLabel(master=f_mco, text='Capture:', font=('', 13, 'bold')).pack(anchor='w')
+keyboardMacro_switch = customtkinter.CTkSwitch(master=f_mco, text='Keyboard', variable=customtkinter.BooleanVar(value=True))
+keyboardMacro_switch.pack(anchor='w', pady=2)
+MouseMacro_switch = customtkinter.CTkSwitch(master=f_mco, text='Mouse', variable=customtkinter.BooleanVar(value=True))
+MouseMacro_switch.pack(anchor='w', pady=2)
 
-customtkinter.CTkLabel(master=macroOptions, text='Delay Options:').place(x=180, y=5)
-overrideMacro_switch = customtkinter.CTkSwitch(master=macroOptions, text='Override')
-overrideMacro_switch.place(x=180, y=30)
-macroDelayOverrideEntry = customtkinter.CTkEntry(master=macroOptions, placeholder_text='0', width=45, height=23)
-macroDelayOverrideEntry.place(x=290, y=30)
-DelayOffSetMacro_switch = customtkinter.CTkSwitch(master=macroOptions, text='Offset')
-DelayOffSetMacro_switch.place(x=180, y=55)
-macroDelayOffsetEntry = customtkinter.CTkEntry(master=macroOptions, placeholder_text='.05', width=45, height=23)
-macroDelayOffsetEntry.place(x=280, y=55)
+f_mdo = customtkinter.CTkFrame(master=macroOptions, fg_color="transparent")
+f_mdo.pack(side='left', fill='both', expand=True, padx=10, pady=5)
+customtkinter.CTkLabel(master=f_mdo, text='Delay Options:', font=('', 13, 'bold')).pack(anchor='w')
+f_mdo1 = customtkinter.CTkFrame(master=f_mdo, fg_color="transparent")
+f_mdo1.pack(anchor='w', pady=2)
+overrideMacro_switch = customtkinter.CTkSwitch(master=f_mdo1, text='Override')
+overrideMacro_switch.pack(side='left')
+macroDelayOverrideEntry = customtkinter.CTkEntry(master=f_mdo1, placeholder_text='0', width=45, height=23)
+macroDelayOverrideEntry.pack(side='left', padx=5)
+f_mdo2 = customtkinter.CTkFrame(master=f_mdo, fg_color="transparent")
+f_mdo2.pack(anchor='w', pady=2)
+DelayOffSetMacro_switch = customtkinter.CTkSwitch(master=f_mdo2, text='Offset')
+DelayOffSetMacro_switch.pack(side='left')
+macroDelayOffsetEntry = customtkinter.CTkEntry(master=f_mdo2, placeholder_text='.05', width=45, height=23)
+macroDelayOffsetEntry.pack(side='left', padx=5)
 
-customtkinter.CTkLabel(master=macroOptions, text='Repeat:').place(x=390, y=5)
+f_mro = customtkinter.CTkFrame(master=macroOptions, fg_color="transparent")
+f_mro.pack(side='left', fill='both', expand=True, padx=10, pady=5)
+customtkinter.CTkLabel(master=f_mro, text='Repeat:', font=('', 13, 'bold')).pack(anchor='w')
 repeatMacro_var = tkinter.IntVar(value=0)
-customtkinter.CTkRadioButton(master=macroOptions, text='Toggle', variable=repeatMacro_var, value=0).place(x=390, y=33)
-customtkinter.CTkRadioButton(master=macroOptions, text='Repeat', variable=repeatMacro_var, value=1).place(x=390, y=66)
-macroRepeatTimes = customtkinter.CTkEntry(master=macroOptions, placeholder_text='1', width=50)
-macroRepeatTimes.place(x=465, y=63)
+customtkinter.CTkRadioButton(master=f_mro, text='Toggle', variable=repeatMacro_var, value=0).pack(anchor='w', pady=2)
+f_mro1 = customtkinter.CTkFrame(master=f_mro, fg_color="transparent")
+f_mro1.pack(anchor='w', pady=2)
+customtkinter.CTkRadioButton(master=f_mro1, text='Repeat', variable=repeatMacro_var, value=1).pack(side='left')
+macroRepeatTimes = customtkinter.CTkEntry(master=f_mro1, placeholder_text='1', width=50)
+macroRepeatTimes.pack(side='left', padx=5)
 
-MacroRecord = customtkinter.CTkButton(master=macroFrame, text=f'Record ({macroRecordHotkey})', command=lambda: checkMacro('down'))
-MacroRecord.place(x=72, y=365)
-MacroStop = customtkinter.CTkButton(master=macroFrame, text=f'Stop ({macroStopHotkey})', state='disabled', command=lambda: stopMacro('down'))
-MacroStop.place(x=222, y=365)
-MacroPlay = customtkinter.CTkButton(master=macroFrame, text=f'Play ({macroPlayHotkey})', command=lambda: startMacro('down'))
-MacroPlay.place(x=372, y=365)
-
-macroContent = customtkinter.CTkTextbox(master=macroFrame, width=600, height=220)
-macroContent.place(x=5, y=140)
-
+f_macfile = customtkinter.CTkFrame(master=macroFrame, fg_color="transparent")
+f_macfile.pack(fill="x", pady=5, padx=5)
 files = os.listdir('Macros')
 if not files:
     files = ['Macro 1']
-    macroContent.insert('0.0', 'Macro Contents:\nNew commands: Loop N / EndLoop / RandomDelay MIN MAX\nView help for details')
 else:
     files = [x.split('.')[0] for x in files]
+MacroFile = customtkinter.CTkComboBox(master=f_macfile, width=350, values=files, command=openFile)
+MacroFile.pack(side='left', padx=(5,10))
+customtkinter.CTkButton(master=f_macfile, text='Save', width=95, command=saveFile).pack(side='left', padx=5)
+customtkinter.CTkButton(master=f_macfile, text='Delete', width=95, command=deleteFile, fg_color="#C0392B", hover_color="#922B21").pack(side='left', padx=5)
+
+macroContent = customtkinter.CTkTextbox(master=macroFrame, width=780, height=200)
+macroContent.pack(padx=5, pady=5)
+if files[0] == 'Macro 1' and not os.path.exists('Macros/Macro 1.txt'):
+    macroContent.insert('0.0', 'Macro Contents:\nNew commands: Loop N / EndLoop / RandomDelay MIN MAX\nView help for details')
+else:
     try:
         with open(f'Macros/{files[0]}.txt', 'r') as f:
             macroContent.insert('0.0', f.read())
     except FileNotFoundError:
         pass
 
-MacroFile = customtkinter.CTkComboBox(master=macroFrame, width=350, values=files, command=openFile)
-MacroFile.place(x=5, y=109)
-customtkinter.CTkButton(master=macroFrame, text='Save', width=95, command=saveFile).place(x=365, y=109)
-customtkinter.CTkButton(master=macroFrame, text='Delete', width=95, command=deleteFile, hover_color='dark red').place(x=469, y=109)
+f_macact = customtkinter.CTkFrame(master=macroFrame, fg_color="transparent")
+f_macact.pack(pady=10)
+MacroRecord = customtkinter.CTkButton(master=f_macact, text=f'Record ({macroRecordHotkey})', command=lambda: checkMacro('down'), width=140, height=35)
+MacroRecord.pack(side='left', padx=10)
+MacroStop = customtkinter.CTkButton(master=f_macact, text=f'Stop ({macroStopHotkey})', state='disabled', command=lambda: stopMacro('down'), width=140, height=35, fg_color="#C0392B", hover_color="#922B21")
+MacroStop.pack(side='left', padx=10)
+MacroPlay = customtkinter.CTkButton(master=f_macact, text=f'Play ({macroPlayHotkey})', command=lambda: startMacro('down'), width=140, height=35)
+MacroPlay.pack(side='left', padx=10)
+
 
 # --- SETTINGS TAB ---
-settingFrame = customtkinter.CTkFrame(master=root, width=620, height=400)
+f_settop = customtkinter.CTkFrame(master=settingFrame, fg_color="transparent")
+f_settop.pack(fill='both', expand=True, padx=5, pady=5)
 
-hotkeypage = customtkinter.CTkFrame(master=settingFrame, width=282, height=220)
-hotkeypage.place(x=5, y=5)
-customtkinter.CTkLabel(master=hotkeypage, text='Keybinds:').place(x=5, y=5)
+hotkeypage = customtkinter.CTkFrame(master=f_settop)
+hotkeypage.pack(side='left', fill='both', expand=True, padx=(0,5))
+customtkinter.CTkLabel(master=hotkeypage, text='Keybinds:', font=('', 13, 'bold')).pack(anchor='w', padx=10, pady=5)
 
 for i, (label, key_name) in enumerate([
     ('Autoclicker', 'clickerHotkey'), ('Macro Record', 'macroRecordHotkey'),
     ('Macro Stop', 'macroStopHotkey'), ('Macro Play', 'macroPlayHotkey')
 ]):
-    customtkinter.CTkLabel(master=hotkeypage, text=f'{label} Hotkey:').place(x=5, y=30 + i * 35)
-    btn = customtkinter.CTkButton(master=hotkeypage, text=f'({settings[key_name]})', width=20)
-    btn.place(x=170, y=30 + i * 35)
+    hkf = customtkinter.CTkFrame(master=hotkeypage, fg_color="transparent")
+    hkf.pack(fill='x', padx=10, pady=2)
+    customtkinter.CTkLabel(master=hkf, text=f'{label} Hotkey:').pack(side='left')
+    btn = customtkinter.CTkButton(master=hkf, text=f'({settings[key_name]})', width=60)
+    btn.pack(side='right')
 
-customtkinter.CTkLabel(master=hotkeypage, text='Theme:').place(x=5, y=185)
-customtkinter.CTkOptionMenu(master=hotkeypage, values=['green', 'blue', 'dark-blue'],
+customtkinter.CTkLabel(master=hotkeypage, text='Appearance:', font=('', 13, 'bold')).pack(anchor='w', padx=10, pady=(15,5))
+f_app = customtkinter.CTkFrame(master=hotkeypage, fg_color="transparent")
+f_app.pack(fill='x', padx=10, pady=2)
+customtkinter.CTkLabel(master=f_app, text='Mode:').pack(side='left')
+customtkinter.CTkOptionMenu(master=f_app, values=['System', 'Dark', 'Light'],
+    variable=customtkinter.StringVar(value=settings['appearanceMode']),
+    command=lambda v: (customtkinter.set_appearance_mode(v),
+                       settings.update({'appearanceMode': v}), _save_s()),
+    width=100).pack(side='right')
+
+f_thm = customtkinter.CTkFrame(master=hotkeypage, fg_color="transparent")
+f_thm.pack(fill='x', padx=10, pady=2)
+customtkinter.CTkLabel(master=f_thm, text='Theme:').pack(side='left')
+customtkinter.CTkOptionMenu(master=f_thm, values=['green', 'blue', 'dark-blue'],
     variable=customtkinter.StringVar(value=settings['themeColor']),
     command=lambda v: (settings.update({'themeColor': v}), _save_s(),
-        showWarning.configure(text='Warning: Restart needed', text_color='orange'))
-).place(x=55, y=185)
+        showWarning.configure(text='Warning: Restart needed', text_color='orange')),
+    width=100).pack(side='right')
 
 # Profile Section
-profileFrame = customtkinter.CTkFrame(master=settingFrame, width=282, height=60)
-profileFrame.place(x=5, y=235)
-customtkinter.CTkLabel(master=profileFrame, text='Profiles:').place(x=5, y=5)
-profile_dropdown = customtkinter.CTkOptionMenu(master=profileFrame, values=profile_mgr.list_profiles() or ['Default'], width=130)
-profile_dropdown.place(x=5, y=30)
-customtkinter.CTkButton(master=profileFrame, text='Save', width=50,
+profileFrame = customtkinter.CTkFrame(master=hotkeypage)
+profileFrame.pack(fill='x', padx=10, pady=15)
+customtkinter.CTkLabel(master=profileFrame, text='Profiles:', font=('', 13, 'bold')).pack(anchor='w', padx=5, pady=(5,0))
+f_prof = customtkinter.CTkFrame(master=profileFrame, fg_color="transparent")
+f_prof.pack(fill='x', padx=5, pady=5)
+profile_dropdown = customtkinter.CTkOptionMenu(master=f_prof, values=profile_mgr.list_profiles() or ['Default'], width=100)
+profile_dropdown.pack(side='left')
+customtkinter.CTkButton(master=f_prof, text='Save', width=50,
     command=lambda: profile_mgr.save_profile(profile_dropdown.get(), {
         'delay': mil_interval.get(), 'button': mouseButton_entry.get(),
         'type': mouseType_entry.get()
     })
-).place(x=145, y=30)
-customtkinter.CTkButton(master=profileFrame, text='Load', width=50,
+).pack(side='left', padx=5)
+customtkinter.CTkButton(master=f_prof, text='Load', width=50,
     command=lambda: None  # TODO: apply profile
-).place(x=205, y=30)
+).pack(side='left')
 
-generalsettings = customtkinter.CTkFrame(master=settingFrame, width=282, height=220)
-generalsettings.place(x=295, y=5)
-customtkinter.CTkLabel(master=generalsettings, text='General Settings:').place(x=5, y=5)
+generalsettings = customtkinter.CTkFrame(master=f_settop)
+generalsettings.pack(side='left', fill='both', expand=True, padx=(5,0))
+customtkinter.CTkLabel(master=generalsettings, text='General Settings:', font=('', 13, 'bold')).pack(anchor='w', padx=10, pady=5)
 
 onTop_switch = customtkinter.CTkSwitch(master=generalsettings, text='Always on top',
     variable=customtkinter.BooleanVar(value=settings['onTop']),
     command=lambda: (root.attributes('-topmost', onTop_switch.get()),
-                     settings.update({'onTop': onTop_switch.get()}), _save_s()))
-onTop_switch.place(x=5, y=30)
+                     settings.update({'onTop': onTop_switch.get()}), _save_s())) # Changed from generalsettings to root for attributes (wait, it was root.attributes)
+onTop_switch.pack(anchor='w', padx=10, pady=5)
 
 mouseSetting_switch = customtkinter.CTkSwitch(master=generalsettings, text='Show mouse position',
     variable=customtkinter.BooleanVar(value=settings['showMousePosition']),
     command=lambda: (settings.update({'showMousePosition': mouseSetting_switch.get()}), _save_s()))
-mouseSetting_switch.place(x=5, y=55)
+mouseSetting_switch.pack(anchor='w', padx=10, pady=5)
 
 superClicker_switch = customtkinter.CTkSwitch(master=generalsettings, text='Superclicker',
     variable=customtkinter.BooleanVar(value=superClicker))
-superClicker_switch.place(x=5, y=80)
+superClicker_switch.pack(anchor='w', padx=10, pady=5)
 
 mouseTimer_switch = customtkinter.CTkSwitch(master=generalsettings, text='Click delay timer',
     variable=customtkinter.BooleanVar(value=settings['mouseTimer']))
-mouseTimer_switch.place(x=5, y=105)
+mouseTimer_switch.pack(anchor='w', padx=10, pady=5)
 
 ghostClick_switch = customtkinter.CTkSwitch(master=generalsettings, text='Ghost click',
     variable=customtkinter.BooleanVar(value=False))
-ghostClick_switch.place(x=5, y=140)
+ghostClick_switch.pack(anchor='w', padx=10, pady=5)
 
-restrict_windows = customtkinter.CTkSwitch(master=generalsettings, text='Restrict to window:',
+f_winres = customtkinter.CTkFrame(master=generalsettings, fg_color="transparent")
+f_winres.pack(anchor='w', padx=10, pady=5)
+restrict_windows = customtkinter.CTkSwitch(master=f_winres, text='Restrict to window:',
     variable=customtkinter.BooleanVar(value=False))
-restrict_windows.place(x=5, y=164)
-
-customtkinter.CTkButton(master=generalsettings, text='Refresh', command=get_window_list,
-    height=10, width=65, corner_radius=100).place(x=200, y=164)
+restrict_windows.pack(side='left')
+customtkinter.CTkButton(master=f_winres, text='Refresh', command=get_window_list,
+    height=24, width=65, corner_radius=100).pack(side='left', padx=10)
 windows_entry = customtkinter.CTkOptionMenu(master=generalsettings, values=['Any Window'],
     width=280, dynamic_resizing=False, command=updateWindows)
-windows_entry.place(x=1, y=188)
+windows_entry.pack(anchor='w', padx=10, pady=5)
 
-changelog = customtkinter.CTkTextbox(master=settingFrame, width=600, height=90)
-changelog.place(x=5, y=305)
+changelog = customtkinter.CTkTextbox(master=settingFrame, height=100)
+changelog.pack(fill='x', padx=5, pady=(0, 5))
 try:
     with open('changelog.txt', 'r') as f:
         changelog.insert('0.0', f.read())
 except FileNotFoundError:
-    changelog.insert('0.0', 'v2.0.0-power: Performance overhaul, CPS counter, multi-point clicking, Loop macros, JSON settings, profiles')
+    changelog.insert('0.0', 'v3.0.0-zero-latency: Modernized GUI Tabview, Zero-Latency Engine, Direct Win32 inputs, CPS lock-free Counter, Memory Optimized loops')
 changelog.configure(state='disabled')
 
-# --- HOME SIDEBAR ---
-def getFrame(swap):
-    for name, frame, btn in [('clicker', clickFrame, tabClicker),
-                              ('macro', macroFrame, tabMacro),
-                              ('setting', settingFrame, tabSetting)]:
-        if swap == name:
-            frame.place(x=225, y=5)
-            btn.configure(state='disabled')
-            lb_home.configure(text=name.title())
-        else:
-            frame.place_forget()
-            btn.configure(state='enabled')
-
-homeFrame = customtkinter.CTkFrame(master=root, width=215, height=510)
-homeFrame.place(x=5, y=5)
-lb_home = customtkinter.CTkLabel(master=homeFrame, text='Auto Clicker', font=('whitney', 20), width=125)
-lb_home.place(x=45, y=25)
-tabClicker = customtkinter.CTkButton(master=homeFrame, text='Auto Clicker', width=125, command=lambda: getFrame('clicker'), state='disabled')
-tabClicker.place(x=45, y=80)
-tabMacro = customtkinter.CTkButton(master=homeFrame, text='Macro', width=125, command=lambda: getFrame('macro'))
-tabMacro.place(x=45, y=135)
-tabSetting = customtkinter.CTkButton(master=homeFrame, text='Settings', width=125, command=lambda: getFrame('setting'))
-tabSetting.place(x=45, y=190)
-customtkinter.CTkLabel(master=homeFrame, text='CTRL+SHIFT+K\nKill switch').place(x=55, y=300)
-customtkinter.CTkLabel(master=homeFrame, text='Appearance:').place(x=45, y=400)
-customtkinter.CTkOptionMenu(master=homeFrame, values=['System', 'Dark', 'Light'],
-    variable=customtkinter.StringVar(value=settings['appearanceMode']),
-    command=lambda v: (customtkinter.set_appearance_mode(v),
-                       settings.update({'appearanceMode': v}), _save_s()),
-    width=125).place(x=45, y=430)
 
 # --- STATUS BAR ---
-showStatus = customtkinter.CTkLabel(master=root, text='Status: Stopped', font=('whitney', 16))
-showStatus.place(x=640, y=420)
-showWarning = customtkinter.CTkLabel(master=root, text='Warning: None')
-showWarning.place(x=225, y=420)
-showMouse = customtkinter.CTkLabel(master=root)
-showMouse.place(x=640, y=465)
-showControl = customtkinter.CTkLabel(master=root)
-showControl.place(x=380, y=465)
+statusBar = customtkinter.CTkFrame(master=root, height=30, fg_color=("gray90", "gray13"))
+statusBar.pack(side="bottom", fill="x")
+
+# Fixed the CTRL+SHIFT+K label since it was lost in the sidebar removal
+killSwitchLbl = customtkinter.CTkLabel(master=statusBar, text='[CTRL+SHIFT+K] Kill Switch', font=('', 12, 'bold'), text_color="#C0392B")
+killSwitchLbl.pack(side="left", padx=10)
+
+showWarning = customtkinter.CTkLabel(master=statusBar, text='')
+showWarning.pack(side="left", padx=20)
+
+showStatus = customtkinter.CTkLabel(master=statusBar, text='Status: Stopped', font=('', 14, 'bold'))
+showStatus.pack(side="right", padx=10)
+
+showMouse = customtkinter.CTkLabel(master=statusBar, text='')
+showMouse.pack(side="right", padx=20)
 
 # --- INIT ---
 applyMousePosition()
